@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classroom</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="js\settings-overlay.js"></script>
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css\bg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <h1 id="greet">
+      <center>Welcome to Interactive Meet! <span id="username"></span></center>
+    </h1>
+    <div class="content"></div>
+    <div class="wrapper">
+      <ul class="mainMenu">
+        <li class="item" id="home">
+          <a href="#login" class="btn" id='sign-in'>
+            <img src="webfonts/home.svg" alt="" class="nav-text" width="30" height="15">
+            <span class="nav-text">Login</span>
+          </a>
+        </li>
+        <li class="item" id="quiz">
+          <a href="#quiz" class="btn">
+            <img src="webfonts/tick.svg" alt="" class="nav-text" width="30" height="15">
+            <span class="nav-text">Quiz</span>
+          </a>
+          <div class="subMenu" id="quizbutton">
+            <a href="">Press  <img src="webfonts/dice.svg" alt="" class="nav-text" width="25" height="15"> icon to start quiz</a>
+          </div>
+        </li>
+        <li class="item" id="resources">
+          <a href="#resources" class="btn">
+            <img src="webfonts/book.svg" alt="" class="nav-text" width="30" height="15">
+            <span class="nav-text">Study Resources</span>
+          </a>
+          <div class="submainMenu">
+            <ul class="subMenu">
+              <li class="item" id="ds">
+                <a href="#ds">
+                  <FONT COLOR=yellow>Data Structure</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="#ds">
+                    <FONT COLOR=cyan> Lab Manuals:</FONT>
+                  </a>
+                  <a href="https://docs.google.com/document/d/1C5Ofb_RadoXwXiI39moBnDLSwIFnAw7D/edit?usp=drivesdk&ouid=117802116791164024009&rtpof=true&sd=true" target="_blank"> Lab 1</a>
+                  <a href="#ds">
+                    <FONT COLOR=cyan> Presentations:</FONT>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1FKgK7jrLUQfjiARnMn06niDCSrWVPY5x/view?usp=drivesdk" target="_blank">Queue</a>
+                </div>
+              </li>
+              <li class="item" id="java">
+                <a href="#ds">
+                  <FONT COLOR=yellow>JAVA</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="#ds">
+                    <FONT COLOR=cyan> Lab Manuals:</FONT>
+                  </a>
+                  <a href="https://docs.google.com/document/d/1a9bJwZOyw_thi0_LdcV2jcw1L2-WRITW/edit?usp=sharing&ouid=117802116791164024009&rtpof=true&sd=true" target="_blank"> Lab 8</a>
+                  <a href="#ds">
+                    <FONT COLOR=cyan> External Resources:</FONT>
+                  </a>
+                  <a href="https://www.javatpoint.com/inheritance-in-java" target="_blank">Inheritance</a>
+                </div>
+              </li>
+              <li class="item" id="ds">
+                <a href="#ds">
+                  <FONT COLOR=yellow>Computer Graphics</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="#ds">
+                    <FONT COLOR=cyan> Lab Manuals:</FONT>
+                  </a>
+                  <a href="https://docs.google.com/document/d/16moJre_oddOxXGf62YrGOb_QMUshegsX/edit?usp=drivesdk&ouid=117802116791164024009&rtpof=true&sd=true" target="_blank"> Lab 1</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="item" id="animation">
+          <a href="#animation" class="btn">
+            <img src="webfonts/play.svg" alt="" class="aimg" width="15" height="15">
+            <span class="atext">Animations</span>
+          </a>
+          <div class="submainMenu">
+            <ul class="subMenu">
+              <li class="item" id="ds">
+                <a href="#ds">
+                  <FONT COLOR=yellow>DATA STRUCTURE</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="" target="_blank">
+                    <FONT COLOR=cyan>Stack:</FONT>
+                  </a>
+                  <a href="animations\ds\Stack\Push\PUSH.gif" target="_blank">Push</a>
+                  <a href="animations\ds\Stack\Pop\POP.gif" target="_blank">Pop</a>
+                  <a href="" target="_blank">
+                    <FONT COLOR=cyan>Queue:</FONT>
+                  </a>
+                  <a href="animations\ds\Queue\Insert\insert.gif" target="_blank">Insert</a>
+                  <a href="animations\ds\Queue\Remove\remove.gif" target="_blank">Remove</a>
+                  <a href="animations\ds\Linear-Search\Linear-search.gif" target="_blank">Linear Search</a>
+                  <a href="animations\ds\Binary-Search\Binary-search.gif" target="_blank">Binary Search</a>
+                  <a href="https://liveexample.pearsoncmg.com/dsanimation13ejava/BSTeBook.html" target="_blank">Binary Search Tree</a>
+                </div>
+              </li>
+              <li class="item" id="dsgt">
+                <a href="#dsgt">
+                  <FONT COLOR=yellow>DSGT</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="animations\tower_of_hanoi.gif" target="_blank">Tower of Hanoi</a>
+                </div>
+              </li>
+              <li class="item" id="cg">
+                <a href="#cg">
+                  <FONT COLOR=yellow>Computer Grahics</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="animations\cg.gif" target="_blank">Walking Man</a>
+                </div>
+              </li>
+              <li class="item" id="java">
+                <a href="#java">
+                  <FONT COLOR=yellow>JAVA</FONT>
+                </a>
+                <div class="subMenu">
+                  <a href="animations\java\c.gif" target="_blank">Java file compiling</a>
+                  <a href="animations\java\Access-Modifiers-in-Java.png" target="_blank">Access Specifiers</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

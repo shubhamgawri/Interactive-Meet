@@ -1,0 +1,77 @@
+<div id="gmqmContainerWrapper">
+  <h2>Interactive Quiz</h2>
+  <h3>Student Leaderboard</h3>
+
+  <div id="userListContainer" class="__gmqm-peopleListContainer">
+    <ul id="gmqmUserList" class="__gmqm-peopleList"></ul>
+  </div>
+
+  <div id="gmqmParticipantView" class="__gmqm-btnList">
+   <div id="gmqmCustomAnswerView" class="__gmqm-questionContainer">
+    <h3>Answer</h3>
+    <textarea type="text" placeholder="Type your answer here" class="__gmqm-textInput" maxlength="50"></textarea>
+   </div>
+    <button class="__gmqm-buttonHigh __gmqm-buttonBuzzer" id="gmqmBtnAnswer">Answer</button>
+  </div>
+
+  <div id="gmqmQuestionWrapper" class="__gmqm-questionWrapper">
+    <div id="gmqmQuestionView" class="__gmqm-questionContainer"></div>
+  </div>
+
+  <div id="gmqmCustomQuestionWrapper" class="__gmqm-questionWrapper">
+    <div id="gmqmCustomQuestionView" class="__gmqm-questionContainer">
+      <h3>Type a Question</h3>
+      <textarea type="text" placeholder="Type your own question" class="__gmqm-textInput" maxlength="255"></textarea>
+    </div>
+  </div>
+
+  <div id="gmqmQuizMasterView" class="__gmqm-btnList">
+    <button id="gmqmBtnAsk" class="__gmqm-buttonHigh __gmqm-buttonStartQuestion">
+      Start question
+    </button>
+
+    <button id="gmqmBtnReset" class="__gmqm-buttonTonal __gmqm-buttonEndQuestion">
+      End question
+    </button>
+
+    <button id="gmqmBtnClearPoints" class="__gmqm-buttonMedium">
+      Clear points
+    </button>
+
+    <button id="gmqmBtnWrong" class="__gmqm-buttonIcon __gmqm-buttonWrong">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor" />
+      </svg>
+    </button>
+
+    <button id="gmqmBtnCorrect" class="__gmqm-buttonIcon __gmqm-buttonCorrect">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.79496 15.875L4.62496 11.705L3.20496 13.115L8.79496 18.705L20.795 6.70501L19.385 5.29501L8.79496 15.875Z" fill="currentColor" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="__gmqm-switch">
+    <input type="checkbox" id="gmqmIsQuizMaster" name="gmqmIsQuizMaster" class="__gmqm-switchCheckbox">
+    <label class="__gmqm-switchLabel" for="gmqmIsQuizMaster">I'm a Teacher</label>
+  </div>
+</div>
+
+<template id="gmqmUserListItem">
+  <div class="__gmqm-peopleListItemProfile">
+    <img src="" data-img-param="=s192-c-mo" />
+  </div>
+  <div class="__gmqm-peopleListItemName">
+    <div class="__gmqm-peopleListItemLabel"></div>
+  </div>
+  <div data-points="0" class="__gmqm-peopleListItemPoints">
+    <span class="__gmqm-peopleListItemPointsText">0</span>
+  </div>
+  <label class="__gmqm-peopleListItemLeader">Teacher</label>
+</template>
+
+<template id="gmqmQuestionItem">
+  <h3>Question</h3>
+  <p>Click to Generate Random Question</p>
+  <ul></ul> 
+</template>

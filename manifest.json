@@ -1,0 +1,57 @@
+{
+  "manifest_version": 2,
+  "name": "Interactive Meet",
+  "description": "An extension for Google Meet!",
+  "version": "1.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+1Nyn70qWXT52gprfZB1yTxm1NRErC0QeENvj1UNDRi6g+3mdynyFn+9sKYLk12hHHJyvEJAaVcmrLSPDruz78FAS0dQnlZCt1kEA2fj3op+KntA8pkNuda19A/Argx+zAU0VJ/Eh1iH3koO94R5q/hv/eLonphhsdJHh+QN6gQJPu6z5a0n6epttSp/dB58YjVTsOBTyr7XVZtDVG9bc5FWOM3x7P1VK041QE4k+/+5W/fBkznX1b+E3JS5MLTLemM6CCT0kEDjBfVJFs2XrM0HC0fsKNMK/Grvq2Nq3/M6a0AUDcifV74JQP48osvjNHAfHFGcsRiFdlXwUnIKQIDAQAB",
+  "icons": {
+    "128": "meet.png",
+    "48": "meet.png",
+    "16": "meet.png"
+  },
+
+  "browser_action": {
+    "default_icon": "meet.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "page": "background.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["./js/browser-polyfill.js", "./js/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "permissions": [
+    "identity",
+    "storage"
+  ],
+
+  "web_accessible_resources": [
+        "css/all.css",
+        "css/bg.css",
+        "css/animations.css",
+        "css/quizmaster.css",
+        "webfonts/*",
+        "quiz/*",
+        "animations/*",
+        "js/settings-overlay.js",
+        "settings-template.html",
+        "audio/*.ogg",
+        "audio/*.mp3",
+        "trivia/*.json",
+        "firebase-app.js",
+        "firebase-auth.js",
+        "firebase-database.js",
+        "popup-signed-in.html",
+        "popup-signed-in.js",
+        "js/foreground.js"
+    ],
+
+  "content_security_policy":"script-src 'self' https://cdn.firebase.com https://apis.google.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
