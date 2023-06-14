@@ -1,0 +1,53 @@
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(0px, 2px);
+  }
+  50% {
+    transform: translate(0px, -7px);
+  }
+  90% {
+    transform: translate(0px, 4px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes shakes {
+  0% {
+    transform: translateX(0px);
+  }
+  15% {
+    transform: translateX(-3px);
+  }
+  25% {
+    transform: translateX(3px);
+  }
+  45% {
+    transform: translateX(-2px);
+  }
+  65% {
+    transform: translateX(3px);
+  }
+  85% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading {
+  to {
+    background-position:
+      350% 0,
+      50% 16px,
+      16px 50px,
+      16px 80px,
+      16px 120px,
+      16px 189px;
+  }
+}

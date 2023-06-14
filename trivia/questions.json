@@ -1,0 +1,134 @@
+[
+  {
+    "timestamp": "2022-02-02 20:04:25",
+    "question": "Which of the following is a linear data structure?",
+    "answers": [
+      {
+        "text": "Array",
+        "correct": true,
+        "choice": "A"
+      },
+      {
+        "text": "Graph",
+        "correct": false,
+        "choice": "B"
+      },
+      {
+        "text": "Binary Tree",
+        "correct": false,
+        "choice": "C"
+      }
+    ],
+    "question_num": 1
+  },
+  {
+    "timestamp": "2022-02-02 20:05:13",
+    "question": "Number of primitive data types in Java are?",
+    "answers": [
+      {
+        "text": "6",
+        "correct": false,
+        "choice": "A"
+      },
+      {
+        "text": "7",
+        "correct": false,
+        "choice": "B"
+      },
+      {
+        "text": "8",
+        "correct": true,
+        "choice": "C"
+      }
+    ],
+    "question_num": 2
+  },
+  {
+    "timestamp": "2022-02-21 02:13:48",
+    "question": "Which data structure is used to handle recursion in C?",
+    "answers": [
+      {
+        "text": "Stack",
+        "correct": true,
+        "choice": "A"
+      },
+      {
+        "text": "Queue",
+        "correct": false,
+        "choice": "B"
+      },
+      {
+        "text": "Tree",
+        "correct": false,
+        "choice": "C"
+      }
+    ],
+    "question_num": 3
+  },
+  {
+    "timestamp": "2022-02-21 02:13:48",
+    "question": "In which language is Python written?",
+    "answers": [
+      {
+        "text": "C++",
+        "correct": false,
+        "choice": "A"
+      },
+      {
+        "text": "C",
+        "correct": true,
+        "choice": "B"
+      },
+      {
+        "text": "JAVA",
+        "correct": false,
+        "choice": "C"
+      }
+    ],
+    "question_num": 4
+  },
+  {
+    "timestamp": "2022-02-21 02:13:48",
+    "question": "Which data structure is used to handle recursion in C?",
+    "answers": [
+      {
+        "text": "Stack",
+        "correct": true,
+        "choice": "A"
+      },
+      {
+        "text": "Queue",
+        "correct": false,
+        "choice": "B"
+      },
+      {
+        "text": "Tree",
+        "correct": false,
+        "choice": "C"
+      }
+    ],
+    "question_num": 5
+  },
+  {
+    "timestamp": "2022-02-21 02:13:48",
+    "question": "Network operating system runs on....",
+    "answers": [
+      {
+        "text": "server",
+        "correct": true,
+        "choice": "A"
+      },
+      {
+        "text": "system",
+        "correct": false,
+        "choice": "B"
+      },
+      {
+        "text": "both",
+        "correct": false,
+        "choice": "C"
+      }
+    ],
+    "question_num": 6
+  }
+]
