@@ -1,8 +1,8 @@
 // Pass state between browser action & injected script
 const inFlightRequests = new Map();
 const CLASS_NAMES = {
-  MEET_SIDEBAR: 'R3Gmyc qwU8Me',
-  MEET_SIDEBAR_VISIBLE: 'R3Gmyc qwU8Me qdulke',
+  MEET_SIDEBAR: '',
+  MEET_SIDEBAR_VISIBLE: '',
   GMQM_FADEOUT: '__gmqm-fadeOut',
 };
 
